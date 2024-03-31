@@ -3,7 +3,7 @@
 
 * {
     margin: 0px;
-    padding: 0px;
+    padding: 5px;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
@@ -13,29 +13,37 @@ header {
     padding: 15px;
     display: flex;
     justify-content: space-between;
+    background-color: transparent;
 }
 
 header .logo a{
     font-size: 23px;
     font-weight: 680;
     text-decoration: none;
-    color: black;
+    color: rgba(169, 129, 27, 0.895);
 }
 
 .navbar a {
-
     text-decoration: none;
-    color: black;
+    color: #000;
     display: inline-block;
     text-align: center;
     margin: 0 10px;
 }
 
+.navbar > a:hover {
+    text-decoration: underline;
+}
+
 #titulo {
-    margin: 15px; /*Serviu para definir a mesma margem com o meu cabeçalho*/
+    margin: 15px;
     padding: 15px;
-    position: relative; /* Torna o elemento posicionável */
-    top: 150px; /* Move o elemento 100px para baixo a partir de sua posição original */
+    position: relative;
+    top: 150px; 
+}
+
+.paragrafo {
+    text-align: justify;
 }
 
 
