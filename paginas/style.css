@@ -1,65 +1,123 @@
 @charset "UTF-8";
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 * {
     margin: 0px;
-    padding: 5px;
-    box-sizing: border-box;
+    padding: 0px;
     font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url(/img/fundo1.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 header {
     margin: 15px;
-    padding: 15px;
+    padding:20px;
     display: flex;
     justify-content: space-between;
-    background-color: transparent;
 }
 
-header .logo a{
-    font-size: 23px;
-    font-weight: 680;
+header > a {
+    font-size: 25px;
+    font-weight: 800;
     text-decoration: none;
-    color: rgba(169, 129, 27, 0.895);
+    color:white;
+    text-shadow: 7px 10px 15px black;
+    
 }
 
-.navbar a {
+nav > a {
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
     text-decoration: none;
-    color: #000;
-    display: inline-block;
-    text-align: center;
-    margin: 0 10px;
+    padding: 25px;
+    transition-duration: 1s;
+    text-shadow: 3px 3px 10px black;
+    
 }
 
-.navbar > a:hover {
+nav > a:hover {
     text-decoration: underline;
+    color: rgba(164, 203, 254, 0.77);
 }
 
-#titulo {
-    margin: 15px;
-    padding: 15px;
-    position: relative;
-    top: 150px; 
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 35px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+
 }
 
-.paragrafo {
+
+ h1 {
+    text-align: center;
+    font-size: 4em;
+    text-shadow: 7px 9px 10px black;
+    padding-top: 1px;
+
+}
+
+
+ h3 {
+    margin: 12px;
+    font-size: 2em;
+    text-shadow: 7px 10px 10px black;
+}
+
+
+p {
+    padding: 12px;
     text-align: justify;
+    text-indent: 8%;
+}
+
+aside > ul  {
+    color: white;
+    text-align: center;
+    margin: 30px;
+    columns: 2;
+    list-style-type: none;
+}
+
+ul > li > a {
+    color: white;
+    text-decoration: none;
+    transition: 1s;
 }
 
 
-.sobre-mim {
-    padding: 15px;
-    margin: 15px;
-    position: relative;
-    top: 150px;
-
+ul > li > a:hover {
+    text-decoration: underline;
+    color: rgba(164, 203, 254, 0.77);
 }
 
 
-.conteudo {
-    margin: 15px;
-    padding: 15px;
-    position: relative;
-    top: 100px;
-    text-align: justify;
+footer {
+    background-color: rgba(60, 60, 138, 0.518);
 }
+
+footer > p {
+    text-shadow: 3px 3px 3px black;
+    color: white;
+    text-align: center;
+}
+
+footer > p > a {
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+    color: rgba(52, 32, 153, 0.567);
+}
+
+
